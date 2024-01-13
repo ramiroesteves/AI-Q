@@ -7,7 +7,7 @@ html, body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: url('AI-Q.png'); /* Full-screen background image */
+  background-image: url('ai-q.png'); /* Full-screen background image */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-size: cover; /* Ensure the background covers the entire viewport */
