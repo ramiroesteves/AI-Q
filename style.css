@@ -1,0 +1,141 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('7.png');/* Full-screen background image */
+    background-position: center;/* Center the background image */
+    background-repeat: no-repeat;/* Prevent the background image from repeating */
+    background-size: cover;/* Ensure the background covers the entire viewport */ 
+    background-attachment: fixed;/* Keep the background fixed during scroll */ 
+}
+
+/* Variables for consistent theming and easier maintenance */
+:root {
+    --light-gray: #f4f4f4;
+    --white: #fff;
+    --dark-gray: #333;
+    --medium-gray: #ddd;
+    --lighter-gray: #ccc;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    z-index: 1000;/* Ensures navigation is above other sections */
+}
+
+/* Logo Styling */
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;/* High z-index to ensure the logo stays above other elements */
+}
+
+/* Styling for navigation and logo links */
+.logo-link, .nav-link {
+    text-decoration: none;
+    color: var(--dark-gray);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.logo-link:hover, .nav-link:hover {
+    background-color: var(--medium-gray);
+    color: var(--white);
+}
+
+/* Common styling for all content sections */
+.section {
+    min-height: 800px;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Sets a base z-index for sections */
+}
+
+/* Overlay for adding a transparency effect to sections */
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;/* Places the overlay behind the section content */
+}
+
+/* Form Styles in Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Ensures the form is above the overlay */
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--medium-gray);
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--medium-gray);
+}
+
+/* Footer styling to ensure it's always at the bottom */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: var(--medium-gray);
+    color: var(--dark-gray);
+    clear: both; /* Ensures footer is below all content */
+}
+
+/* Media Queries for Responsive Design - Adjusts layout for smaller screens */
+@media (max-width: 600px) {
+    .nav-link, .section, .section h1, .section h2, .section p {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
