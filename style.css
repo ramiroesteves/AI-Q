@@ -7,11 +7,10 @@ html, body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: url('ai-q.png'); /* Full-screen background image */
+  background-image: url('AI-Q.png'); /* Full-screen background image */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
   background-size: cover; /* Ensure the background covers the entire viewport */
-  /* Removed background-attachment: fixed; for better mobile compatibility */
 }
 
 /* Variables for consistent theming and easier maintenance */
@@ -21,11 +20,12 @@ body {
   --dark-gray: #333;
   --medium-gray: #ddd;
   --lighter-gray: #ccc;
+  --transparent-gray: rgba(244, 244, 244, 0.5);
 }
 
 /* Top Navigation Bar */
 .top-nav {
-  background-color: var(--light-gray);
+  background-color: var(--transparent-gray);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,14 +49,130 @@ body {
 /* Styling for navigation and logo links */
 .logo-link, .nav-link {
   text-decoration: none;
-  color: var(--dark-gray);
+  color: var(--medium-gray);
   padding: 5px 10px;
   transition: background-color 0.3s;
+  font-weight: bold;
 }
 
 .logo-link:hover, .nav-link:hover {
-  background-color: var(--medium-gray);
-  color: var(--white);
+  color: var(--dark-gray);
+}
+
+/* Home Section Styling */
+.home-container {
+    max-width: 800px;
+    margin: center; /* Center the container */
+    padding: 40px;
+    background: var(--transparent-gray); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: var(--white); /* Text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+#home h1 {
+    position: absolute;
+    top: 150px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+    color: var(--medium-gray);
+}
+
+#home h3 {
+    font-size: 1.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.1rem; /* Slightly larger font size for the text */
+    line-height: 1.6; /* Improved line height for readability */
+    text-align: justify;
+}
+
+.home-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* About Section Styling */
+.about-container {
+    max-width: 800px;
+    margin: center; /* Center the container */
+    padding: 40px;
+    background: var(--transparent-gray); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: var(--white); /* Text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+#about h1 {
+    position: absolute;
+    top: 150px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+    color: var(--medium-gray);
+}
+
+#about h3 {
+    font-size: 1.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem; /* Slightly larger font size for the text */
+    line-height: 1.6; /* Improved line height for readability */
+    text-align: justify;
+}
+
+.about-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Features Section Styling */
+.features-container {
+    max-width: 800px;
+    margin: center; /* Center the container */
+    padding: 40px;
+    background: var(--transparent-gray); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: var(--white); /* Text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+#features h1 {
+    position: absolute;
+    top: 150px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+    color: var(--medium-gray);
+}
+
+#features h3 {
+    font-size: 1.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px;
+}
+
+#features p {
+    font-size: 1.1rem; /* Slightly larger font size for the text */
+    line-height: 1.6; /* Improved line height for readability */
+    text-align: justify;
+}
+
+.features-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Common styling for all content sections */
@@ -89,7 +205,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   position: relative;
   z-index: 2; /* Ensures the form is above the overlay */
@@ -138,6 +254,18 @@ footer {
   .logo {
       font-size: 20px;
   }
+
+  .home-container {
+        padding: 20px;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
 
   body {
       background-attachment: scroll; /* Makes the background scroll with the page */
