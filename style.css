@@ -141,7 +141,7 @@ footer {
 
   body {
       background-attachment: scroll; /* Makes the background scroll with the page */
-      background-size: auto; /* Adjusts the size of the background image */
+      background-size: 100% 100%; /* Adjusts the background to cover the screen */
   }
 }
 
