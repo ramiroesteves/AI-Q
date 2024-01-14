@@ -39,7 +39,7 @@ body {
 /* Logo Styling */
 .logo {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2.5rem;
   position: fixed;
   top: 10px;
   left: 10px;
@@ -62,7 +62,7 @@ body {
 /* Home Section Styling */
 .home-container {
     max-width: 800px;
-    margin: center; /* Center the container */
+    margin: auto; /* Center the container */
     padding: 40px;
     background: var(--transparent-gray); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
@@ -78,7 +78,7 @@ body {
 }
 
 #home p {
-    font-size: 1.1rem; /* Slightly larger font size for the text */
+    font-size: 1rem; /* Slightly larger font size for the text */
     line-height: 1.6; /* Improved line height for readability */
     text-align: justify;
 }
@@ -92,7 +92,7 @@ body {
 /* About Section Styling */
 .about-container {
     max-width: 800px;
-    margin: center; /* Center the container */
+    margin: auto; /* Center the container */
     padding: 40px;
     background: var(--transparent-gray); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
@@ -108,7 +108,7 @@ body {
 }
 
 #about p {
-    font-size: 1.1rem; /* Slightly larger font size for the text */
+    font-size: 1rem; /* Slightly larger font size for the text */
     line-height: 1.6; /* Improved line height for readability */
     text-align: justify;
 }
@@ -122,7 +122,7 @@ body {
 /* Features Section Styling */
 .features-container {
     max-width: 800px;
-    margin: center; /* Center the container */
+    margin: auto; /* Center the container */
     padding: 40px;
     background: var(--transparent-gray); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
@@ -138,7 +138,7 @@ body {
 }
 
 #features p {
-    font-size: 1.1rem; /* Slightly larger font size for the text */
+    font-size: 1rem; /* Slightly larger font size for the text */
     line-height: 1.6; /* Improved line height for readability */
     text-align: justify;
 }
@@ -221,7 +221,7 @@ footer {
 @media (max-width: 600px) {
   .nav-link, .section, .section h1, .section h2, .section p {
       padding: 5px;
-      font-size: 14px;
+      font-size: 1rem;
   }
 
   .logo {
@@ -249,6 +249,6 @@ footer {
 /* Larger screens */
 @media (min-width: 601px) {
   body {
-      background-attachment: fixed; /* Fixed background for larger screens */
+      background-attachment: scroll; 
   }
 }
