@@ -249,6 +249,6 @@ footer {
 /* Larger screens */
 @media (min-width: 601px) {
   body {
-      background-attachment: scroll; 
+      background-attachment: fixed; 
   }
 }
