@@ -72,14 +72,6 @@ body {
     position: relative;
 }
 
-#home h1 {
-    position: relative;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    transform: translateY(-50%);
-    color: var(--medium-gray);
-}
-
 #home h3 {
     font-size: 1.5rem; /* Larger font size for the heading */
     margin-bottom: 20px;
@@ -110,14 +102,6 @@ body {
     position: relative;
 }
 
-#about h1 {
-    position: relative;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    transform: translateY(-50%);
-    color: var(--medium-gray);
-}
-
 #about h3 {
     font-size: 1.5rem; /* Larger font size for the heading */
     margin-bottom: 20px;
@@ -146,14 +130,6 @@ body {
     color: var(--white); /* Text color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-}
-
-#features h1 {
-    position: relative;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    transform: translateY(-50%);
-    color: var(--medium-gray);
 }
 
 #features h3 {
