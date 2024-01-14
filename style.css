@@ -73,8 +73,7 @@ body {
 }
 
 #home h1 {
-    position: absolute;
-    top: 150px;
+    position: relative;
     font-size: 2.5rem;
     margin-bottom: 20px;
     transform: translateY(-50%);
@@ -112,8 +111,7 @@ body {
 }
 
 #about h1 {
-    position: absolute;
-    top: 150px;
+    position: relative;
     font-size: 2.5rem;
     margin-bottom: 20px;
     transform: translateY(-50%);
@@ -151,8 +149,7 @@ body {
 }
 
 #features h1 {
-    position: absolute;
-    top: 150px;
+    position: relative;
     font-size: 2.5rem;
     margin-bottom: 20px;
     transform: translateY(-50%);
