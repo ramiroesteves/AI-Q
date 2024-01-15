@@ -28,7 +28,7 @@ body {
 .top-nav {
   background-color: var(--transparent-gray);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* space between items */
   align-items: center;
   padding: 10px;
   position: fixed;
@@ -41,20 +41,24 @@ body {
 .logo {
   font-weight: bold;
   font-size: 2.5rem;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 1000; /* High z-index to ensure the logo stays above other elements */
+  z-index: 1001; /* High z-index to ensure the logo stays above other elements */
 }
 
 .nav-toggle {
     display: none;
 }
 
+/* Burger Icon - Display Adjustment */
 .burger-icon {
-    display: none;
-    cursor: pointer;
-   
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  position: absolute; /* Adjusted to absolute positioning */
+  top: 10px; /* Align with the top */
+  right: 10px; /* Align to the right */
+  z-index: 1001; /* Ensure it's above the top-nav */
 }
 
 /* Style for burger icon */
