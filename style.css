@@ -3,6 +3,7 @@ html, body {
   min-height: 100vh; /* This ensures that the body is at least as tall as the viewport */
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 body {
@@ -46,6 +47,32 @@ body {
   z-index: 1000; /* High z-index to ensure the logo stays above other elements */
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    /* Add burger icon styles here */
+}
+
+/* Style for burger icon lines here */
+.burger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-gray);
+    margin: 5px 0;
+}
+
+#navbar {
+    display: none;
+}
+
+#nav-toggle:checked + .burger-icon + #navbar {
+    display: flex;
+}
+
 /* Styling for navigation and logo links */
 .logo-link, .nav-link {
   text-decoration: none;
@@ -87,7 +114,6 @@ body {
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
-
 
 /* About Section Styling */
 .about-container {
@@ -223,6 +249,14 @@ footer {
       padding: 5px;
       font-size: 1rem;
   }
+
+  .burger-icon {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
 
   .logo {
       font-size: 20px;
