@@ -54,10 +54,10 @@ body {
 .burger-icon {
     display: none;
     cursor: pointer;
-    /* Add burger icon styles here */
+   
 }
 
-/* Style for burger icon lines here */
+/* Style for burger icon */
 .burger-icon div {
     width: 25px;
     height: 3px;
@@ -249,30 +249,38 @@ footer {
       padding: 5px;
       font-size: 1rem;
   }
+  .top-nav {
+      display: none; /* Hide regular navigation bar on small screens */
+  }
 
   .burger-icon {
-        display: block;
-    }
+      display: block;/* Show burger icon on small screens */
+  }
 
-    #navbar {
-        flex-direction: column;
-    }
+  #navbar {
+      display: none; /* Initially hide the navigation links */
+      flex-direction: column;
+  }
+
+  #nav-toggle:checked + .burger-icon + #navbar {
+      display: flex; /* Display navigation links when burger icon is checked */
+  }
 
   .logo {
       font-size: 20px;
   }
 
   .home-container {
-        padding: 20px;
-    }
+      padding: 20px;
+  }
 
-    #home h1 {
-        font-size: 2rem;
-    }
+  #home h1 {
+      font-size: 2rem;
+  }
 
-    #home p {
-        font-size: 1rem;
-    }
+  #home p {
+      font-size: 1rem;
+  }
 
   body {
       background-attachment: scroll; /* Makes the background scroll with the page */
