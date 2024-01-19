@@ -110,7 +110,7 @@ body {
 
 #home p {
     font-size: 1rem; /* Slightly larger font size for the text */
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.6; /* line height for readability */
     text-align: justify;
 }
 
@@ -139,7 +139,7 @@ body {
 
 #about p {
     font-size: 1rem; /* Slightly larger font size for the text */
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.6; 
     text-align: justify;
 }
 
@@ -156,7 +156,7 @@ body {
     padding: 40px;
     background: var(--transparent-gray); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     color: var(--white); /* Text color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -169,7 +169,7 @@ body {
 
 #features p {
     font-size: 1rem; /* Slightly larger font size for the text */
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.6; 
     text-align: justify;
 }
 
